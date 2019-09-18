@@ -1,0 +1,23 @@
+---
+title: "Encuadre"
+---
+
+## Asignatura de Herramientas Ofimáticas
+
+__Propósito de aprendizaje de la asignatura__: El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información.
+
+## Unidades de aprendizaje
+
+1. __Interfaz de usuario__.
+  - Manejo de archivos.
+  - Fundamentos de amenazas y ataques informáticos
+  - Aplicaciones del sistema operativo
+  
+2. __Ofimática__. 
+  - Procesadores de texto
+  - Presentador de diapositivas
+  - Hojas de cálculo
+  
+3. __Internet__.
+  - Navegadores e internet
+  - Fuentes de información digital
