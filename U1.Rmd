@@ -21,3 +21,4 @@ title: "Interfaz de usuario"
 17. Reinicio seguro.
 18. Administrador de tareas.
 19. Restaurar sistema.
+20. Reproductores multimedia.
