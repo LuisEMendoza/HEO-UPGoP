@@ -405,8 +405,199 @@ $(document).ready(function () {
 </div>
 <div id="fundamentos-de-amenazas-y-ataques-informaticos" class="section level2">
 <h2>Fundamentos de amenazas y ataques informáticos</h2>
-<div id="section" class="section level3">
-<h3></h3>
+<p>En los tiempos modernos, cuya velocidad de cambio, modos de obtener información y la manera en la que esta fluye de un punto a otro incluso del planeta, esa avidez del usuario actual por compartir absolutamente todo lo que realiza en su vida diaria, laboral, e incluso lúdica ha abierto la puerta para otro tipo de ataques que comprometan la seguridad personal y económica de las personas. Estamos constantemente conectados a Internet, y eso no deja mucha brecha para la privacidad. Sin embargo, lo peor no es perder la intimidad, sino perder miles o millones de pesos para el sector empresarial, nuestras cuentas bancarias, la producción intelectual, etc.</p>
+<p>Existen muchos tipos de ataques informáticos, de los cuales se enumeran algunos a continuación. Si queremos saber cómo estar seguros, debemos primero conocer cómo nos atacan.</p>
+<div id="ataque-denial-of-service-dos" class="section level3">
+<h3>Ataque Denial of Service (DoS)</h3>
+<p>Evita el acceso a un sitio, es la denegación de servicio causada por un tráfico inusitado a servidores, lo que logra saturarlo. Pueden distinguirse ciertos síntomas, como la lentitud de carga de un sitio o incluso la imposibilidad de acceder.</p>
+<div id="tear-drop-attack" class="section level4">
+<h4>Tear Drop Attack</h4>
+<p>Envío de paquetes de datos con superposición y cargas útiles de gran tamaño. Así, el servidor no puede ensamblar dichos paquetes y se bloquea o reinicia.</p>
+</div>
+<div id="smurf" class="section level4">
+<h4>Smurf</h4>
+<p>Se envía una enorme cantidad de solicitudes de eco ICMP (<em>ping</em>) a la dirección <em>broadcast</em> con una dirección falsa, lo que causa que el propio router envíe la transmisión IP a todos los equipos, los cuales responden el ECHO. Si la cantidad es grande, la red se satura.</p>
+</div>
+<div id="syn-flood" class="section level4">
+<h4>SYN Flood</h4>
+<p>La inundación SYN consiste en que el atacante se comunica con un servidor mediante una dirección de remitente falsa, enviando paquetes TCP/SYN. El servidor responde con SYN/ACK y al no recibir respuesta el servidor se queda semiabierto, esperando y sin la posibilidad de atender otras peticiones.</p>
+</div>
+<div id="land-attack" class="section level4">
+<h4>Land Attack</h4>
+<p>Se envían paquetes SYN falsificados que confunden al objetivo y causan su bloqueo.</p>
+</div>
+<div id="jolt-dos" class="section level4">
+<h4>Jolt DoS</h4>
+<p>Se envían fragmentos ICMP de tal manera que el objetivo no puede volver a armarlos, causando un aumento de uso de CPU.</p>
+</div>
+<div id="fraggie-dos" class="section level4">
+<h4>Fraggie DoS</h4>
+<p>Es similar al <em>Smurf</em>, pero en lugar de IMCP son paquetes UDP.</p>
+</div>
+</div>
+<div id="ping-flood" class="section level3">
+<h3>Ping Flood</h3>
+<p>Es simple, se basa en el envío masivo de <em>pings</em> desde un origen UNIX con un ancho de banda superior al de la víctima.</p>
+</div>
+<div id="ping-de-la-muerte" class="section level3">
+<h3>Ping de la Muerte</h3>
+<p>El atacante envía un paquete ICMP de más de 65,536 bytes. El sistema operativo simplemente no sabe que hacer con él y colapsa. Es ya obsoleto, pues en la actualidad simplemente se ignoran dichos paquetes.</p>
+</div>
+<div id="denegacion-de-servicio-distribuido-ddos" class="section level3">
+<h3>Denegación de Servicio Distribuido (DDoS)</h3>
+<p>Se le conoce como distribuido ya que utiliza varios equipos para el envío masivo de correos electrónicos, datos, spam, publicidad y todo lo que ocasione tráfico desmesurado.</p>
+</div>
+<div id="escaneo-de-puertos" class="section level3">
+<h3>Escaneo de puertos</h3>
+<p>Consiste en enviar mensajes a cada puerto de un equipo conectado a una red. Esto con el fin de saber qué puertos se encuentran abiertos y buscar vulnerabilidades en los mismos.</p>
+</div>
+<div id="arp-spoofing" class="section level3">
+<h3>ARP Spoofing</h3>
+<p>Implica clonar una dirección MAC en redes que utilizan ARP (Adress Resolution Protocol, responsable de encontrar la dirección de hardware que corresponde a cierta dirección IP) y «escuchar» los datos que fluyen por ahí e incluso detener dicho flujo.</p>
+<div id="inundacion-mac" class="section level4">
+<h4>Inundación MAC</h4>
+<p>Envío masivo de paquetes MAC para saturar la memoria del switch y causar que se capturen paquetes de información.</p>
+</div>
+<div id="envenenamiento-de-cache-dns" class="section level4">
+<h4>Envenenamiento de caché DNS</h4>
+<p>Enviar datos de almacenamiento falsos a la caché para mejorar el rendimiento, haciéndose pasar por auténticos.</p>
+</div>
+<div id="ip-spoofing" class="section level4">
+<h4>IP Spoofing</h4>
+<p>Suplantación de la dirección IP, con el fin de esconder la identidad original o hacerse pasar por otro.</p>
+</div>
+</div>
+<div id="ftp-bounce" class="section level3">
+<h3>FTP Bounce</h3>
+<p>Conexión a servidores FTP y envío de archivos a otras máquinas mediante el comando PORT a través de <em>firewalls</em> que lo permiten. Es ya obsoleto.</p>
+</div>
+<div id="tcp-session-hijacking" class="section level3">
+<h3>TCP Session Hijacking</h3>
+<p>Tomar la sesión TCP al principio de la misma y suplantar a uno de los que se estaban comunicando.</p>
+</div>
+<div id="ataque-man-in-the_middle" class="section level3">
+<h3>Ataque Man-In-The_Middle</h3>
+<p>Intercepción de cierto modo de comunicación por una entidad que se coloca entre los dos interlocutores. Por ejemplo, una máquina que se encuentra entre nuestro navegador y el servidor del banco, tratando de obtener nuestros datos bancarios.</p>
+</div>
+<div id="ingenieria-social" class="section level3">
+<h3>Ingeniería social</h3>
+<p>Manipulación de las personas para que estas renuncien de manera voluntaria a la privacidad y la salvaguarda de sus datos.</p>
+</div>
+<div id="os-finger-printing" class="section level3">
+<h3>OS Finger Printing</h3>
+<p>Identificar el sistema operativo de un equipo con la intención de saber qué tipo de ataque lanzar.</p>
+<div id="activa" class="section level4">
+<h4>Activa</h4>
+<p>Enviar paquetes diseñados especialmente para analizar el tipo de respuesta del equipo y determinar el SO.</p>
+</div>
+<div id="pasiva" class="section level4">
+<h4>Pasiva</h4>
+<p>Rastrear el comportamiento de una máquina para detectar sus sistema operativo.</p>
+</div>
+</div>
+<div id="keyloggers" class="section level3">
+<h3>KeyLoggers</h3>
+<p>Por lo general es software que registra las teclas presionadas en una máquina sin notificar al usuario, ya que se ejecuta en segundo plano.</p>
+</div>
+<div id="icmp-tunneling" class="section level3">
+<h3>ICMP Tunneling</h3>
+<p>Entra como un mensaje IMCP a través del firewall, que por defecto no lo bloquea y establece un canal de comunicación cifrado y oculto entre dos computadoras utilizando <em>pings</em>.</p>
+</div>
+<div id="loki" class="section level3">
+<h3>LOKI</h3>
+<p>Es un programa utilizado para demostrar que los datos pueden transmitirse de manera secreta si se esconden en el tráfico de cargas no útiles, como por ejemplo, un ping. Se utiliza como puerta trasera en sistemas UNIX.</p>
+</div>
+<div id="ataque-de-prediccion-de-secuencia-tcp" class="section level3">
+<h3>Ataque de predicción de secuencia TCP</h3>
+<p>El atacante espera y monitoriza la comunicación entre dos máquinas, con la intención de predecir el número de secuencia que sigue. Corta la comunicación entre ellas colapsando a una y suplantándola con su misma IP y enviando el número que debería seguir. Así la segunda máquina no se da cuenta de la usurpación y queda proclive a la inyección de datos maliciosos o a otorgar acceso al atacante.</p>
+</div>
+<div id="ataques-a-aplicaciones-web" class="section level3">
+<h3>Ataques a aplicaciones web</h3>
+<p>En la actualidad, la mayoría de la información se encuentra almacenada en páginas web. Contra ellas se lanzan los siguientes ataques:</p>
+<div id="inyeccion-sql" class="section level4">
+<h4>Inyección SQL</h4>
+<p>Ataque mediante el aprovechamiento de las vulnerabilidades de la capa de la base de datos.</p>
+</div>
+<div id="cross-site-request" class="section level4">
+<h4>Cross-Site Request</h4>
+<p>Transmisión de comandos o datos no autorizados por parte de un usuario en el que el sitio confía. Dicha confianza se entiende por el navegador que utiliza el usuario.</p>
+</div>
+<div id="envenenamiento-de-cookies" class="section level4">
+<h4>Envenenamiento de <em>cookies</em></h4>
+<p>Modificación de los contenidos de una cookie para robar la identidad de un usuario.</p>
+</div>
+<div id="robo-de-cookies" class="section level4">
+<h4>Robo de cookies</h4>
+<p>Se realiza por medio de Javascript (script del lado del cliente), consiguiendo que al hacer clic en un enlace, el script busque las cookies asociadas al sitio y las envíe al atacante por medio de correo, por ejemplo.</p>
+</div>
+<div id="web-defacement" class="section level4">
+<h4>Web Defacement</h4>
+<p>Modificación del contenido de un sitio web o su total sustitución por otro.</p>
+</div>
+<div id="buffer-overflow" class="section level4">
+<h4>Buffer Overflow</h4>
+<p>Almacenamiento de datos en un búfer por fuera de memoria para desbordarlo. Los datos sobrepasan la capacidad y comienzan a ocupar espacios reservados para variables de proceso o datos de control del programa. Puede causar la falla catastrófica de la aplicación o una violación del sitio.</p>
+</div>
+<div id="navegacion-forzada" class="section level4">
+<h4>Navegación forzada</h4>
+<p>Entrar de manera forzada a todos los recursos accesibles de un sitio aunque no sean visibles y no haya referencia a los mismos. Pueden ser logs, archivos de respaldo o de configuración que puedan contener datos como contraseñas, por ejemplo.</p>
+</div>
+<div id="division-de-respuesta-http" class="section level4">
+<h4>División de respuesta HTTP</h4>
+<p>El atacante pasa datos maliciosos a la aplicación y esta los incluye en un encabezado HTTP, abriendo la puerta para suplantación o el Cross-Site Request.</p>
+</div>
+<div id="defectos-de-inyeccion" class="section level4">
+<h4>Defectos de inyección</h4>
+<p>Se refieren a aplicaciones web que utilizan un intérprete de scripts (Perl o Python) o bases de datos como SQL, llamadas al sistema o el uso de programas externos a través del shell. Un atacante podría incluir código malicioso en algún script y ejecutarlo.</p>
+</div>
+</div>
+<div id="malware" class="section level3">
+<h3>Malware</h3>
+<p>Es una forma abreviada de <em>software malicioso</em> e incluye virus, gusanos, troyanos, rootkits, spyware, etc. Es código creado con la finalidad de dañar.</p>
+<div id="virus" class="section level4">
+<h4>Virus</h4>
+<p>Programa informático que tiene la capacidad de reproducirse para infectar cualquier computadora después de propagarse por medio de internet, una red, memorias SD o USB. Debe unirse a otro programa informático y corrompen o dañan archivos.</p>
+</div>
+<div id="gusanos" class="section level4">
+<h4>Gusanos</h4>
+<p>También pueden replicarse aunque lo hacen principalmente por medio de la red. No necesitan unirse a otro programa y sus daños van más bien por el lado de consumir ancho de banda.</p>
+</div>
+<div id="rootkit" class="section level4">
+<h4>RootKit</h4>
+<p>Software diseñado para tomar los privilegios de administrador sobre un sistema sin ser detectado. El propósito es realizar operaciones maliciosas y se instalan incluso en la bios, hipervisores, cargadores de arranque o el kernel.</p>
+</div>
+<div id="troyanos" class="section level4">
+<h4>Troyanos</h4>
+<p>No se reproduce, pero se instala usualmente bajo permiso del usuario al hacerse pasar por software inocuo o benéfico. Permite el acceso al equipo.</p>
+</div>
+</div>
+<div id="adware" class="section level3">
+<h3>Adware</h3>
+<p>Es software que descarga o reproduce publicidad en sitios que visita el usuario o incluso en los programas instalados que utiliza de manera local.</p>
+</div>
+<div id="spyware" class="section level3">
+<h3>Spyware</h3>
+<p>Espía las acciones de un usuario en su computadora, encendiendo la cámara web o recolectando las teclas que presiona, los archivos que crea o los sitios que visita.</p>
+</div>
+<div id="phishing" class="section level3">
+<h3>Phishing</h3>
+<p>Extraer datos sensibles o comprometedores del usuario haciéndose pasar por una entidad de confianza.</p>
+</div>
+<div id="medidas-de-seguridad" class="section level3">
+<h3>Medidas de seguridad</h3>
+<ul>
+<li>Aplicación de filtrado de router</li>
+<li>Bloquear direcciones IP sin usar</li>
+<li>Permitir el acceso a la red solo al tráfico deseado</li>
+<li>Deshabilitar servicios de red innecesarios</li>
+<li>Actualización de antivirus regularmente</li>
+<li>Tener una muy buena política de contraseñas</li>
+<li>Limitar la cantidad de ancho de banda de la red</li>
+<li>Uso de la red de filtrado de acceso</li>
+<li>No abrir ningún correo sin remitente o que este sea desconocido. Incluso no abrir ninguno del cual se desconozca su intención o motivo o sea inesperado, aún conociendo al remitente.</li>
+<li>Implementar certificados de autenticación.</li>
+<li>Bloquear cualquier puerto innecesario.</li>
+</ul>
 </div>
 </div>
 <div id="aplicaciones." class="section level2">
