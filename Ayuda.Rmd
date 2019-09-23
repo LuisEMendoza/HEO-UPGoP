@@ -1,6 +1,0 @@
----
-title: "Acerca de estos apuntes"
----
-
-Esta página ha sido realizada en principio para soportar el contenido que se aborda en clase y abarca todas las asignaturas del docente. Sin embargo, puede utilizarse como material de referencia y de consulta, tanto en contenidos de la materia como en los comandos utilizados por el programa informático, donde aplica. 
-

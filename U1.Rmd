@@ -2,23 +2,42 @@
 title: "Interfaz de usuario"
 ---
 
-1. Novedades de Windows 10.
-2. Diferencias entre sistemas operativos.
-3. Elementos básicos de las ventanas.
-4. Organizar ventanas.
-5. El escritorio.
-6. Menú inicio.
-7. Barra de tareas.
-8. Vista de tareas y escritorios virtuales.
-9. Iconos del sistema.
-10. Centro de actividades.
-11. Configuración.
-12. Cuentas locales y de Microsoft.
-13. Explorador de archivos.
-14. Operaciones con archivos.
-15. Búsqueda.
-16. Aplicaciones.
-17. Reinicio seguro.
-18. Administrador de tareas.
-19. Restaurar sistema.
-20. Reproductores multimedia.
+## Interfaz de Windows 10.
+
+### El escritorio.
+### Menú inicio.
+### Barra de tareas.
+### Vista de tareas.
+### Iconos del sistema.
+### Elementos básicos de las ventanas.
+#### Organizar ventanas.
+### Explorador de archivos.
+#### Operaciones con archivos.
+#### Búsqueda.
+### Centro de actividades.
+### Configuración.
+### Cuentas locales y de Microsoft.
+### Reinicio seguro.
+### Administrador de tareas.
+### Restaurar sistema.
+
+## Interfaces de otros sistemas operativos.
+
+### El escritorio.
+### Menú inicio.
+### Barra de tareas.
+### Vista de tareas.
+### Iconos del sistema.
+### Elementos básicos de las ventanas.
+#### Organizar ventanas.
+### Explorador de archivos.
+#### Operaciones con archivos.
+#### Búsqueda.
+### Centro de actividades.
+### Configuración.
+### Cuentas locales.
+### Administrador de tareas.
+
+## Fundamentos de amenazas y ataques informáticos
+### 
+## Aplicaciones.
