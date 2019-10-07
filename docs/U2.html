@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>OfimÃ¡tica</title>
+<title>Ofimática</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -86,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -247,48 +247,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -337,8 +298,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -416,32 +375,32 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">OfimÃ¡tica</h1>
+<h1 class="title toc-ignore">Ofimática</h1>
 
 </div>
 
 
-<p>A continuaciÃ³n entraremos de lleno a las herramientas ofimÃ¡ticas en general, y a <strong>Microsoft Office</strong> y <strong>LibreOffice</strong> en lo particular. Estas dos <em>suites</em> ofimÃ¡ticas son las mÃ¡s utilizadas, aunque la balanza se inclina sobremanera por la primera. La gran cuota de mercado que ostenta la soluciÃ³n de <em>Microsoft</em> vuelve pertinente el aprender y dominar sus aplicaciones, sin embargo, no todos pueden permitirse el adquirir sus licencias. Ante esta dificultad, se vuelve necesario dominar la segunda opciÃ³n: <em>LibreOffice</em>, la cual es libre y en tÃ©rminos prÃ¡cticos, gratis.</p>
-<p>Abordaremos en primer lugar los procesadores de texto, tales como el casi omnipresente <strong>Word</strong> y su contraparte libre, <strong>Writer</strong>. Enseguida cubriremos lo pertinente a las hojas de cÃ¡lculo, siendo <strong>Excel</strong> la oferta de <em>Microsoft</em> y <strong>Calc</strong> la libre. Posteriormente estudiaremos el <em>software</em> para crear presentaciones: <strong>PowerPoint</strong> e <strong>Impress</strong>. Para finalizar la unidad, veremos en forma un tanto superficial otras aplicaciones Ãºtiles para generar documentos que se salen del estÃ¡ndar de las <em>suites</em> ofimÃ¡ticas, tales como <strong>Typora</strong> o <strong>RMarkdown</strong> para el lenguaje de marcado <em>Markdown</em> y <strong>Lyx</strong> para <em>Latex</em>.</p>
+<p>A continuación entraremos de lleno a las herramientas ofimáticas en general, y a <strong>Microsoft Office</strong> y <strong>LibreOffice</strong> en lo particular. Estas dos <em>suites</em> ofimáticas son las más utilizadas, aunque la balanza se inclina sobremanera por la primera. La gran cuota de mercado que ostenta la solución de <em>Microsoft</em> vuelve pertinente el aprender y dominar sus aplicaciones, sin embargo, no todos pueden permitirse el adquirir sus licencias. Ante esta dificultad, se vuelve necesario dominar la segunda opción: <em>LibreOffice</em>, la cual es libre y en términos prácticos, gratis.</p>
+<p>Abordaremos en primer lugar los procesadores de texto, tales como el casi omnipresente <strong>Word</strong> y su contraparte libre, <strong>Writer</strong>. Enseguida cubriremos lo pertinente a las hojas de cálculo, siendo <strong>Excel</strong> la oferta de <em>Microsoft</em> y <strong>Calc</strong> la libre. Posteriormente estudiaremos el <em>software</em> para crear presentaciones: <strong>PowerPoint</strong> e <strong>Impress</strong>. Para finalizar la unidad, veremos en forma un tanto superficial otras aplicaciones útiles para generar documentos que se salen del estándar de las <em>suites</em> ofimáticas, tales como <strong>Typora</strong> o <strong>RMarkdown</strong> para el lenguaje de marcado <em>Markdown</em> y <strong>Lyx</strong> para <em>Latex</em>.</p>
 <div id="procesadores-de-texto" class="section level2">
 <h2>Procesadores de texto</h2>
-<p>Entendemos los procesadores de texto como aplicaciones que nos permiten crear, editar y aplicar formato a documentos de texto. Se distancian de los editores de texto en que nos permiten realmente modificar aspectos visuales del texto en sÃ­, como escribir en <strong>negritas</strong>, en <em>cursivas</em>, poner Ã©nfasis en ciertas frases o simplemente hacer mÃ¡s notorios los tÃ­tulos.</p>
-<p>A pesar de su aparente sencillez, existen dos enfoques bien diferenciados en cuanto a cÃ³mo deberÃ­a elaborarse un documento de texto. El mÃ¡s comÃºn es el conocido como <strong>WYSIWYG</strong>, <em>What You See Is What You Get</em> (“lo que ves es lo que obtienes”), haciendo referencia a que lo que se observa en pantalla es lo que se obtendrÃ¡ al imprimir el documento. Es un enfoque proveniente de las antiguas mÃ¡quinas de escribir y como tal, tambiÃ©n ha heredado ciertos vicios de aquellos tiempos, como el salto de lÃ­nea, la tabulaciÃ³n, el doble espacio, etcÃ©tera. Parece el enfoque mÃ¡s lÃ³gico, pero tambiÃ©n implica doble trabajo para el autor de documentos: generar el contenido (que es lo que verdaderamente importa) y aplicar el formato. Aplicaciones como <em>Word</em>, <em>Writer</em> o <em>Dreamweaver</em> siguen este enfoque.</p>
-<p>El otro enfoque es el conocido como <strong>WYSIWYM</strong>, <em>What You See Is What You Mean</em> (“lo que ves es lo que quieres decir”). AquÃ­ el protagonismo lo tiene solamente el contenido del documento, por lo que el escritor debe enfocarse en Ã©l, dejando el formato para la aplicaciÃ³n. Aunque eso sÃ­, el autor debe conocer la estructura y el orden semÃ¡ntico del <em>software</em>, a la vez que debe memorizar ciertos comandos o etiquetas. AdemÃ¡s, el <em>software</em> debe compilar el documento para dotarle un tipo de salida deseado. Las aplicaciones que representan muy bien este enfoque son algo escasas, sobresaliendo <em>Lyx</em> (basado en <em>Latex</em>), aunque estÃ¡ mÃ¡s enfocado a la creaciÃ³n de documentos cientÃ­ficos. Algo similar en cuanto a enfoque, aunque no en cuanto a medios, es el lenguaje de marcado <em>Markdown</em>, el cual aprovecha algunas de las ventajas de <em>Latex</em> para la generaciÃ³n de documentos tÃ©cnicos, cientÃ­ficos y de ingenierÃ­a, ademÃ¡s de proveer herramientas para creaciÃ³n de pÃ¡ginas web. Una aplicaciÃ³n que hace buen uso de <em>Markdown</em> es <strong>RStudio</strong>, cuya implementaciÃ³n llamada <em>RMarkdown</em> permite, ademÃ¡s de lo anterior, la ejecuciÃ³n de cÃ³digo <strong>R</strong>, <strong>Python</strong> y otros en el propio documento.</p>
-<p>A continuaciÃ³n abordaremos las aplicaciones que pertenecen al primer enfoque. Posteriormente veremos unos trazos de aquellas que obedecen al segundo enfoque.</p>
+<p>Entendemos los procesadores de texto como aplicaciones que nos permiten crear, editar y aplicar formato a documentos de texto. Se distancian de los editores de texto en que nos permiten realmente modificar aspectos visuales del texto en sí, como escribir en <strong>negritas</strong>, en <em>cursivas</em>, poner énfasis en ciertas frases o simplemente hacer más notorios los títulos.</p>
+<p>A pesar de su aparente sencillez, existen dos enfoques bien diferenciados en cuanto a cómo debería elaborarse un documento de texto. El más común es el conocido como <strong>WYSIWYG</strong>, <em>What You See Is What You Get</em> (“lo que ves es lo que obtienes”), haciendo referencia a que lo que se observa en pantalla es lo que se obtendrá al imprimir el documento. Es un enfoque proveniente de las antiguas máquinas de escribir y como tal, también ha heredado ciertos vicios de aquellos tiempos, como el salto de línea, la tabulación, el doble espacio, etcétera. Parece el enfoque más lógico, pero también implica doble trabajo para el autor de documentos: generar el contenido (que es lo que verdaderamente importa) y aplicar el formato. Aplicaciones como <em>Word</em>, <em>Writer</em> o <em>Dreamweaver</em> siguen este enfoque.</p>
+<p>El otro enfoque es el conocido como <strong>WYSIWYM</strong>, <em>What You See Is What You Mean</em> (“lo que ves es lo que quieres decir”). Aquí el protagonismo lo tiene solamente el contenido del documento, por lo que el escritor debe enfocarse en él, dejando el formato para la aplicación. Aunque eso sí, el autor debe conocer la estructura y el orden semántico del <em>software</em>, a la vez que debe memorizar ciertos comandos o etiquetas. Además, el <em>software</em> debe compilar el documento para dotarle un tipo de salida deseado. Las aplicaciones que representan muy bien este enfoque son algo escasas, sobresaliendo <em>Lyx</em> (basado en <em>Latex</em>), aunque está más enfocado a la creación de documentos científicos. Algo similar en cuanto a enfoque, aunque no en cuanto a medios, es el lenguaje de marcado <em>Markdown</em>, el cual aprovecha algunas de las ventajas de <em>Latex</em> para la generación de documentos técnicos, científicos y de ingeniería, además de proveer herramientas para creación de páginas web. Una aplicación que hace buen uso de <em>Markdown</em> es <strong>RStudio</strong>, cuya implementación llamada <em>RMarkdown</em> permite, además de lo anterior, la ejecución de código <strong>R</strong>, <strong>Python</strong> y otros en el propio documento.</p>
+<p>A continuación abordaremos las aplicaciones que pertenecen al primer enfoque. Posteriormente veremos unos trazos de aquellas que obedecen al segundo enfoque.</p>
 <div id="word" class="section level3">
 <h3>Word</h3>
 <div id="abrir-y-guardar-documentos" class="section level4">
 <h4>Abrir y guardar documentos</h4>
-<p>Lo primero que debe realizarse es precisamente ejecutar la aplicaciÃ³n. Cabe mencionar que estas instrucciones aplican a un sistema <em>Windows 10</em> y <em>Office 2016</em>. Se consigue abrir <em>Word</em> presionando la tecla <em>Windows</em> (tambiÃ©n conocida como <em>meta</em>) y escribiendo <em>word</em>. TambiÃ©n puede ejecutarse presionando la combinaciÃ³n <code>Windows+S</code> para pedirle a <em>Cortana</em> que ejecute la aplicaciÃ³n.</p>
+<p>Lo primero que debe realizarse es precisamente ejecutar la aplicación. Cabe mencionar que estas instrucciones aplican a un sistema <em>Windows 10</em> y <em>Office 2016</em>. Se consigue abrir <em>Word</em> presionando la tecla <em>Windows</em> (también conocida como <em>meta</em>) y escribiendo <em>word</em>. También puede ejecutarse presionando la combinación <code>Windows+S</code> para pedirle a <em>Cortana</em> que ejecute la aplicación.</p>
 <p><img src="images/001-inicio.jpg" /></p>
-<p>Al abrirse, lo primero que saldrÃ¡ serÃ¡ la siguiente pantalla:</p>
+<p>Al abrirse, lo primero que saldrá será la siguiente pantalla:</p>
 <p><img src="images/002-iniciow.jpg" /></p>
-<p>Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es la barra azul de la izquierda. AhÃ­ se encuentran las posibles acciones y opciones del programa, como <code>Inicio</code> (la pantalla actual), <code>Nuevo</code> (ofrece una buena cantidad de plantillas o documentos predefinidos) y <code>Abrir</code> (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de <em>OneDrive</em> que hayamos registrado). En su parte inferior nos permite acceder a informaciÃ³n de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicaciÃ³n a <em>Microsoft</em> y opciones de la misma. Volveremos aquÃ­ mÃ¡s adelante.</p>
-<p>En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta, ademÃ¡s de dos botones con forma de <em>emoji</em> que sirven como atajo para los comentarios positivos y negativos de la secciÃ³n pasada.</p>
-<p>Justo debajo del saludo de “buenos dÃ­as” se encuentra la secciÃ³n de plantillas, donde <em>Word</em> pone a disposiciÃ³n nuestra un pequeÃ±o resumen de las plantillas visibles en la pantalla de <code>Nuevo</code>.</p>
+<p>Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es 1) la barra azul de la izquierda. Ahí se encuentran las posibles acciones y opciones del programa, como <code>Inicio</code> (la pantalla actual), <code>Nuevo</code> (ofrece una buena cantidad de plantillas o documentos predefinidos) y <code>Abrir</code> (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de <em>OneDrive</em> que hayamos registrado). En su parte inferior nos permite acceder a información de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicación a <em>Microsoft</em> y opciones de la misma. Volveremos aquí más adelante.</p>
+<p>En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta, además de dos botones con forma de <em>emoji</em> que sirven como atajo para los comentarios positivos y negativos de la sección pasada.</p>
+<p>Justo debajo del saludo de “buenos días” se encuentra la sección de plantillas, donde <em>Word</em> pone a disposición nuestra un pequeño resumen de las plantillas visibles en la pantalla de <code>Nuevo</code>.</p>
 <p>Para terminar, en la parte central inferior se encuentra un resumen de la pantalla <code>Abrir</code>.</p>
-<p>Daremos clic a <code>Documento en blanco</code> y nos aparecerÃ¡ la siguiente pantalla.</p>
+<p>Daremos clic a <code>Documento en blanco</code> y nos aparecerá la siguiente pantalla.</p>
 </div>
 </div>
 <div id="writer" class="section level3">
@@ -464,7 +423,7 @@ div.tocify {
 </div>
 </div>
 <div id="hojas-de-calculo" class="section level2">
-<h2>Hojas de cÃ¡lculo</h2>
+<h2>Hojas de cálculo</h2>
 <div id="excel" class="section level3">
 <h3>Excel</h3>
 </div>
@@ -500,6 +459,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
