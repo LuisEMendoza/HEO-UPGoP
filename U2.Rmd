@@ -35,11 +35,12 @@ Al abrirse, lo primero que saldrá será la siguiente pantalla:
 
 Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es 1) la barra azul de la izquierda. Ahí se encuentran las posibles acciones y opciones del programa, como `Inicio` (la pantalla actual), `Nuevo` (ofrece una buena cantidad de plantillas o documentos predefinidos) y `Abrir` (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de _OneDrive_ que hayamos registrado). En su parte inferior nos permite acceder a información de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicación a _Microsoft_ y opciones de la misma. Volveremos aquí más adelante. 
 
-En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta, además de dos botones con forma de _emoji_ que sirven como atajo para los comentarios positivos y negativos de la sección pasada.
 
-Justo debajo del saludo de "buenos días" se encuentra la sección de plantillas, donde _Word_ pone a disposición nuestra un pequeño resumen de las plantillas visibles en la pantalla de `Nuevo`. 
+En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta (2), además de dos botones con forma de _emoji_ que sirven como atajo para los comentarios positivos y negativos de la sección pasada.
 
-Para terminar, en la parte central inferior se encuentra un resumen de la pantalla `Abrir`.
+Justo debajo del saludo de "buenos días" se encuentra la sección de plantillas (3), donde _Word_ pone a disposición nuestra un pequeño resumen de las plantillas visibles en la pantalla de `Nuevo`. 
+
+Para terminar, en la parte central inferior se encuentra un resumen de la pantalla `Abrir` (4).
 
 Daremos clic a `Documento en blanco` y nos aparecerá la siguiente pantalla.
 
