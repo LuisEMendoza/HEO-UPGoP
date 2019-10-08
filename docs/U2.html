@@ -7,12 +7,11 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>Ofimática</title>
+<title>OfimÃ¡tica</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -84,6 +86,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,8 +247,106 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
 
 
 
@@ -255,6 +356,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -302,15 +413,76 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Ofimática</h1>
+<h1 class="title toc-ignore">OfimÃ¡tica</h1>
 
 </div>
 
 
-<p>En construcción.</p>
+<p>A continuaciÃ³n entraremos de lleno a las herramientas ofimÃ¡ticas en general, y a <strong>Microsoft Office</strong> y <strong>LibreOffice</strong> en lo particular. Estas dos <em>suites</em> ofimÃ¡ticas son las mÃ¡s utilizadas, aunque la balanza se inclina sobremanera por la primera. La gran cuota de mercado que ostenta la soluciÃ³n de <em>Microsoft</em> vuelve pertinente el aprender y dominar sus aplicaciones, sin embargo, no todos pueden permitirse el adquirir sus licencias. Ante esta dificultad, se vuelve necesario dominar la segunda opciÃ³n: <em>LibreOffice</em>, la cual es libre y en tÃ©rminos prÃ¡cticos, gratis.</p>
+<p>Abordaremos en primer lugar los procesadores de texto, tales como el casi omnipresente <strong>Word</strong> y su contraparte libre, <strong>Writer</strong>. Enseguida cubriremos lo pertinente a las hojas de cÃ¡lculo, siendo <strong>Excel</strong> la oferta de <em>Microsoft</em> y <strong>Calc</strong> la libre. Posteriormente estudiaremos el <em>software</em> para crear presentaciones: <strong>PowerPoint</strong> e <strong>Impress</strong>. Para finalizar la unidad, veremos en forma un tanto superficial otras aplicaciones Ãºtiles para generar documentos que se salen del estÃ¡ndar de las <em>suites</em> ofimÃ¡ticas, tales como <strong>Typora</strong> o <strong>RMarkdown</strong> para el lenguaje de marcado <em>Markdown</em> y <strong>Lyx</strong> para <em>Latex</em>.</p>
+<div id="procesadores-de-texto" class="section level2">
+<h2>Procesadores de texto</h2>
+<p>Entendemos los procesadores de texto como aplicaciones que nos permiten crear, editar y aplicar formato a documentos de texto. Se distancian de los editores de texto en que nos permiten realmente modificar aspectos visuales del texto en sÃ­, como escribir en <strong>negritas</strong>, en <em>cursivas</em>, poner Ã©nfasis en ciertas frases o simplemente hacer mÃ¡s notorios los tÃ­tulos.</p>
+<p>A pesar de su aparente sencillez, existen dos enfoques bien diferenciados en cuanto a cÃ³mo deberÃ­a elaborarse un documento de texto. El mÃ¡s comÃºn es el conocido como <strong>WYSIWYG</strong>, <em>What You See Is What You Get</em> (“lo que ves es lo que obtienes”), haciendo referencia a que lo que se observa en pantalla es lo que se obtendrÃ¡ al imprimir el documento. Es un enfoque proveniente de las antiguas mÃ¡quinas de escribir y como tal, tambiÃ©n ha heredado ciertos vicios de aquellos tiempos, como el salto de lÃ­nea, la tabulaciÃ³n, el doble espacio, etcÃ©tera. Parece el enfoque mÃ¡s lÃ³gico, pero tambiÃ©n implica doble trabajo para el autor de documentos: generar el contenido (que es lo que verdaderamente importa) y aplicar el formato. Aplicaciones como <em>Word</em>, <em>Writer</em> o <em>Dreamweaver</em> siguen este enfoque.</p>
+<p>El otro enfoque es el conocido como <strong>WYSIWYM</strong>, <em>What You See Is What You Mean</em> (“lo que ves es lo que quieres decir”). AquÃ­ el protagonismo lo tiene solamente el contenido del documento, por lo que el escritor debe enfocarse en Ã©l, dejando el formato para la aplicaciÃ³n. Aunque eso sÃ­, el autor debe conocer la estructura y el orden semÃ¡ntico del <em>software</em>, a la vez que debe memorizar ciertos comandos o etiquetas. AdemÃ¡s, el <em>software</em> debe compilar el documento para dotarle un tipo de salida deseado. Las aplicaciones que representan muy bien este enfoque son algo escasas, sobresaliendo <em>Lyx</em> (basado en <em>Latex</em>), aunque estÃ¡ mÃ¡s enfocado a la creaciÃ³n de documentos cientÃ­ficos. Algo similar en cuanto a enfoque, aunque no en cuanto a medios, es el lenguaje de marcado <em>Markdown</em>, el cual aprovecha algunas de las ventajas de <em>Latex</em> para la generaciÃ³n de documentos tÃ©cnicos, cientÃ­ficos y de ingenierÃ­a, ademÃ¡s de proveer herramientas para creaciÃ³n de pÃ¡ginas web. Una aplicaciÃ³n que hace buen uso de <em>Markdown</em> es <strong>RStudio</strong>, cuya implementaciÃ³n llamada <em>RMarkdown</em> permite, ademÃ¡s de lo anterior, la ejecuciÃ³n de cÃ³digo <strong>R</strong>, <strong>Python</strong> y otros en el propio documento.</p>
+<p>A continuaciÃ³n abordaremos las aplicaciones que pertenecen al primer enfoque. Posteriormente veremos unos trazos de aquellas que obedecen al segundo enfoque.</p>
+<div id="word" class="section level3">
+<h3>Word</h3>
+<div id="abrir-y-guardar-documentos" class="section level4">
+<h4>Abrir y guardar documentos</h4>
+<p>Lo primero que debe realizarse es precisamente ejecutar la aplicaciÃ³n. Cabe mencionar que estas instrucciones aplican a un sistema <em>Windows 10</em> y <em>Office 2016</em>. Se consigue abrir <em>Word</em> presionando la tecla <em>Windows</em> (tambiÃ©n conocida como <em>meta</em>) y escribiendo <em>word</em>. TambiÃ©n puede ejecutarse presionando la combinaciÃ³n <code>Windows+S</code> para pedirle a <em>Cortana</em> que ejecute la aplicaciÃ³n.</p>
+<p><img src="images/001-inicio.jpg" /></p>
+<p>Al abrirse, lo primero que saldrÃ¡ serÃ¡ la siguiente pantalla:</p>
+<p><img src="images/002-iniciow.jpg" /></p>
+<p>Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es la barra azul de la izquierda. AhÃ­ se encuentran las posibles acciones y opciones del programa, como <code>Inicio</code> (la pantalla actual), <code>Nuevo</code> (ofrece una buena cantidad de plantillas o documentos predefinidos) y <code>Abrir</code> (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de <em>OneDrive</em> que hayamos registrado). En su parte inferior nos permite acceder a informaciÃ³n de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicaciÃ³n a <em>Microsoft</em> y opciones de la misma. Volveremos aquÃ­ mÃ¡s adelante.</p>
+<p>En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta, ademÃ¡s de dos botones con forma de <em>emoji</em> que sirven como atajo para los comentarios positivos y negativos de la secciÃ³n pasada.</p>
+<p>Justo debajo del saludo de “buenos dÃ­as” se encuentra la secciÃ³n de plantillas, donde <em>Word</em> pone a disposiciÃ³n nuestra un pequeÃ±o resumen de las plantillas visibles en la pantalla de <code>Nuevo</code>.</p>
+<p>Para terminar, en la parte central inferior se encuentra un resumen de la pantalla <code>Abrir</code>.</p>
+<p>Daremos clic a <code>Documento en blanco</code> y nos aparecerÃ¡ la siguiente pantalla.</p>
+</div>
+</div>
+<div id="writer" class="section level3">
+<h3>Writer</h3>
+</div>
+<div id="markdown" class="section level3">
+<h3>Markdown</h3>
+<div id="typora" class="section level4">
+<h4>Typora</h4>
+</div>
+<div id="rmarkdown" class="section level4">
+<h4>RMarkdown</h4>
+</div>
+</div>
+<div id="latex" class="section level3">
+<h3>Latex</h3>
+<div id="lyx" class="section level4">
+<h4>Lyx</h4>
+</div>
+</div>
+</div>
+<div id="hojas-de-calculo" class="section level2">
+<h2>Hojas de cÃ¡lculo</h2>
+<div id="excel" class="section level3">
+<h3>Excel</h3>
+</div>
+<div id="calc" class="section level3">
+<h3>Calc</h3>
+</div>
+</div>
+<div id="presentaciones" class="section level2">
+<h2>Presentaciones</h2>
+<div id="powerpoint" class="section level3">
+<h3>PowerPoint</h3>
+</div>
+<div id="impress" class="section level3">
+<h3>Impress</h3>
+</div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -326,23 +498,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

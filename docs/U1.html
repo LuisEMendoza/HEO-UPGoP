@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -84,6 +83,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,6 +244,18 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
@@ -312,8 +324,8 @@ $(document).ready(function () {
 <div id="el-escritorio." class="section level3">
 <h3>El escritorio.</h3>
 </div>
-<div id="menu-inicio." class="section level3">
-<h3>Menú inicio.</h3>
+<div id="mena-inicio." class="section level3">
+<h3>MenÃº inicio.</h3>
 </div>
 <div id="barra-de-tareas." class="section level3">
 <h3>Barra de tareas.</h3>
@@ -325,7 +337,7 @@ $(document).ready(function () {
 <h3>Iconos del sistema.</h3>
 </div>
 <div id="elementos-basicos-de-las-ventanas." class="section level3">
-<h3>Elementos básicos de las ventanas.</h3>
+<h3>Elementos bÃ¡sicos de las ventanas.</h3>
 <div id="organizar-ventanas." class="section level4">
 <h4>Organizar ventanas.</h4>
 </div>
@@ -335,15 +347,15 @@ $(document).ready(function () {
 <div id="operaciones-con-archivos." class="section level4">
 <h4>Operaciones con archivos.</h4>
 </div>
-<div id="busqueda." class="section level4">
-<h4>Búsqueda.</h4>
+<div id="basqueda." class="section level4">
+<h4>BÃºsqueda.</h4>
 </div>
 </div>
 <div id="centro-de-actividades." class="section level3">
 <h3>Centro de actividades.</h3>
 </div>
-<div id="configuracion." class="section level3">
-<h3>Configuración.</h3>
+<div id="configuracian." class="section level3">
+<h3>ConfiguraciÃ³n.</h3>
 </div>
 <div id="cuentas-locales-y-de-microsoft." class="section level3">
 <h3>Cuentas locales y de Microsoft.</h3>
@@ -363,8 +375,8 @@ $(document).ready(function () {
 <div id="el-escritorio.-1" class="section level3">
 <h3>El escritorio.</h3>
 </div>
-<div id="menu-inicio.-1" class="section level3">
-<h3>Menú inicio.</h3>
+<div id="mena-inicio.-1" class="section level3">
+<h3>MenÃº inicio.</h3>
 </div>
 <div id="barra-de-tareas.-1" class="section level3">
 <h3>Barra de tareas.</h3>
@@ -376,7 +388,7 @@ $(document).ready(function () {
 <h3>Iconos del sistema.</h3>
 </div>
 <div id="elementos-basicos-de-las-ventanas.-1" class="section level3">
-<h3>Elementos básicos de las ventanas.</h3>
+<h3>Elementos bÃ¡sicos de las ventanas.</h3>
 <div id="organizar-ventanas.-1" class="section level4">
 <h4>Organizar ventanas.</h4>
 </div>
@@ -386,15 +398,15 @@ $(document).ready(function () {
 <div id="operaciones-con-archivos.-1" class="section level4">
 <h4>Operaciones con archivos.</h4>
 </div>
-<div id="busqueda.-1" class="section level4">
-<h4>Búsqueda.</h4>
+<div id="basqueda.-1" class="section level4">
+<h4>BÃºsqueda.</h4>
 </div>
 </div>
 <div id="centro-de-actividades.-1" class="section level3">
 <h3>Centro de actividades.</h3>
 </div>
-<div id="configuracion.-1" class="section level3">
-<h3>Configuración.</h3>
+<div id="configuracian.-1" class="section level3">
+<h3>ConfiguraciÃ³n.</h3>
 </div>
 <div id="cuentas-locales." class="section level3">
 <h3>Cuentas locales.</h3>
@@ -404,31 +416,31 @@ $(document).ready(function () {
 </div>
 </div>
 <div id="fundamentos-de-amenazas-y-ataques-informaticos" class="section level2">
-<h2>Fundamentos de amenazas y ataques informáticos</h2>
-<p>En los tiempos modernos, cuya velocidad de cambio, modos de obtener información y la manera en la que esta fluye de un punto a otro incluso del planeta, esa avidez del usuario actual por compartir absolutamente todo lo que realiza en su vida diaria, laboral, e incluso lúdica ha abierto la puerta para otro tipo de ataques que comprometan la seguridad personal y económica de las personas. Estamos constantemente conectados a Internet, y eso no deja mucha brecha para la privacidad. Sin embargo, lo peor no es perder la intimidad, sino perder miles o millones de pesos para el sector empresarial, nuestras cuentas bancarias, la producción intelectual, etc.</p>
-<p>Existen muchos tipos de ataques informáticos, de los cuales se enumeran algunos a continuación. Si queremos saber cómo estar seguros, debemos primero conocer cómo nos atacan.</p>
+<h2>Fundamentos de amenazas y ataques informÃ¡ticos</h2>
+<p>En los tiempos modernos, cuya velocidad de cambio, modos de obtener informaciÃ³n y la manera en la que esta fluye de un punto a otro incluso del planeta, esa avidez del usuario actual por compartir absolutamente todo lo que realiza en su vida diaria, laboral, e incluso lÃºdica ha abierto la puerta para otro tipo de ataques que comprometan la seguridad personal y econÃ³mica de las personas. Estamos constantemente conectados a Internet, y eso no deja mucha brecha para la privacidad. Sin embargo, lo peor no es perder la intimidad, sino perder miles o millones de pesos para el sector empresarial, nuestras cuentas bancarias, la producciÃ³n intelectual, etc.</p>
+<p>Existen muchos tipos de ataques informÃ¡ticos, de los cuales se enumeran algunos a continuaciÃ³n. Si queremos saber cÃ³mo estar seguros, debemos primero conocer cÃ³mo nos atacan.</p>
 <div id="ataque-denial-of-service-dos" class="section level3">
 <h3>Ataque Denial of Service (DoS)</h3>
-<p>Evita el acceso a un sitio, es la denegación de servicio causada por un tráfico inusitado a servidores, lo que logra saturarlo. Pueden distinguirse ciertos síntomas, como la lentitud de carga de un sitio o incluso la imposibilidad de acceder.</p>
+<p>Evita el acceso a un sitio, es la denegaciÃ³n de servicio causada por un trÃ¡fico inusitado a servidores, lo que logra saturarlo. Pueden distinguirse ciertos sÃ­ntomas, como la lentitud de carga de un sitio o incluso la imposibilidad de acceder.</p>
 <div id="tear-drop-attack" class="section level4">
 <h4>Tear Drop Attack</h4>
-<p>Envío de paquetes de datos con superposición y cargas útiles de gran tamaño. Así, el servidor no puede ensamblar dichos paquetes y se bloquea o reinicia.</p>
+<p>EnvÃ­o de paquetes de datos con superposiciÃ³n y cargas Ãºtiles de gran tamaÃ±o. AsÃ­, el servidor no puede ensamblar dichos paquetes y se bloquea o reinicia.</p>
 </div>
 <div id="smurf" class="section level4">
 <h4>Smurf</h4>
-<p>Se envía una enorme cantidad de solicitudes de eco ICMP (<em>ping</em>) a la dirección <em>broadcast</em> con una dirección falsa, lo que causa que el propio router envíe la transmisión IP a todos los equipos, los cuales responden el ECHO. Si la cantidad es grande, la red se satura.</p>
+<p>Se envÃ­a una enorme cantidad de solicitudes de eco ICMP (<em>ping</em>) a la direcciÃ³n <em>broadcast</em> con una direcciÃ³n falsa, lo que causa que el propio router envÃ­e la transmisiÃ³n IP a todos los equipos, los cuales responden el ECHO. Si la cantidad es grande, la red se satura.</p>
 </div>
 <div id="syn-flood" class="section level4">
 <h4>SYN Flood</h4>
-<p>La inundación SYN consiste en que el atacante se comunica con un servidor mediante una dirección de remitente falsa, enviando paquetes TCP/SYN. El servidor responde con SYN/ACK y al no recibir respuesta el servidor se queda semiabierto, esperando y sin la posibilidad de atender otras peticiones.</p>
+<p>La inundaciÃ³n SYN consiste en que el atacante se comunica con un servidor mediante una direcciÃ³n de remitente falsa, enviando paquetes TCP/SYN. El servidor responde con SYN/ACK y al no recibir respuesta el servidor se queda semiabierto, esperando y sin la posibilidad de atender otras peticiones.</p>
 </div>
 <div id="land-attack" class="section level4">
 <h4>Land Attack</h4>
-<p>Se envían paquetes SYN falsificados que confunden al objetivo y causan su bloqueo.</p>
+<p>Se envÃ­an paquetes SYN falsificados que confunden al objetivo y causan su bloqueo.</p>
 </div>
 <div id="jolt-dos" class="section level4">
 <h4>Jolt DoS</h4>
-<p>Se envían fragmentos ICMP de tal manera que el objetivo no puede volver a armarlos, causando un aumento de uso de CPU.</p>
+<p>Se envÃ­an fragmentos ICMP de tal manera que el objetivo no puede volver a armarlos, causando un aumento de uso de CPU.</p>
 </div>
 <div id="fraggie-dos" class="section level4">
 <h4>Fraggie DoS</h4>
@@ -437,138 +449,138 @@ $(document).ready(function () {
 </div>
 <div id="ping-flood" class="section level3">
 <h3>Ping Flood</h3>
-<p>Es simple, se basa en el envío masivo de <em>pings</em> desde un origen UNIX con un ancho de banda superior al de la víctima.</p>
+<p>Es simple, se basa en el envÃ­o masivo de <em>pings</em> desde un origen UNIX con un ancho de banda superior al de la vÃ­ctima.</p>
 </div>
 <div id="ping-de-la-muerte" class="section level3">
 <h3>Ping de la Muerte</h3>
-<p>El atacante envía un paquete ICMP de más de 65,536 bytes. El sistema operativo simplemente no sabe que hacer con él y colapsa. Es ya obsoleto, pues en la actualidad simplemente se ignoran dichos paquetes.</p>
+<p>El atacante envÃ­a un paquete ICMP de mÃ¡s de 65,536 bytes. El sistema operativo simplemente no sabe que hacer con Ã©l y colapsa. Es ya obsoleto, pues en la actualidad simplemente se ignoran dichos paquetes.</p>
 </div>
-<div id="denegacion-de-servicio-distribuido-ddos" class="section level3">
-<h3>Denegación de Servicio Distribuido (DDoS)</h3>
-<p>Se le conoce como distribuido ya que utiliza varios equipos para el envío masivo de correos electrónicos, datos, spam, publicidad y todo lo que ocasione tráfico desmesurado.</p>
+<div id="denegacian-de-servicio-distribuido-ddos" class="section level3">
+<h3>DenegaciÃ³n de Servicio Distribuido (DDoS)</h3>
+<p>Se le conoce como distribuido ya que utiliza varios equipos para el envÃ­o masivo de correos electrÃ³nicos, datos, spam, publicidad y todo lo que ocasione trÃ¡fico desmesurado.</p>
 </div>
 <div id="escaneo-de-puertos" class="section level3">
 <h3>Escaneo de puertos</h3>
-<p>Consiste en enviar mensajes a cada puerto de un equipo conectado a una red. Esto con el fin de saber qué puertos se encuentran abiertos y buscar vulnerabilidades en los mismos.</p>
+<p>Consiste en enviar mensajes a cada puerto de un equipo conectado a una red. Esto con el fin de saber quÃ© puertos se encuentran abiertos y buscar vulnerabilidades en los mismos.</p>
 </div>
 <div id="arp-spoofing" class="section level3">
 <h3>ARP Spoofing</h3>
-<p>Implica clonar una dirección MAC en redes que utilizan ARP (Adress Resolution Protocol, responsable de encontrar la dirección de hardware que corresponde a cierta dirección IP) y «escuchar» los datos que fluyen por ahí e incluso detener dicho flujo.</p>
-<div id="inundacion-mac" class="section level4">
-<h4>Inundación MAC</h4>
-<p>Envío masivo de paquetes MAC para saturar la memoria del switch y causar que se capturen paquetes de información.</p>
+<p>Implica clonar una direcciÃ³n MAC en redes que utilizan ARP (Adress Resolution Protocol, responsable de encontrar la direcciÃ³n de hardware que corresponde a cierta direcciÃ³n IP) y Â«escucharÂ» los datos que fluyen por ahÃ­ e incluso detener dicho flujo.</p>
+<div id="inundacian-mac" class="section level4">
+<h4>InundaciÃ³n MAC</h4>
+<p>EnvÃ­o masivo de paquetes MAC para saturar la memoria del switch y causar que se capturen paquetes de informaciÃ³n.</p>
 </div>
-<div id="envenenamiento-de-cache-dns" class="section level4">
-<h4>Envenenamiento de caché DNS</h4>
-<p>Enviar datos de almacenamiento falsos a la caché para mejorar el rendimiento, haciéndose pasar por auténticos.</p>
+<div id="envenenamiento-de-cacha-dns" class="section level4">
+<h4>Envenenamiento de cachÃ© DNS</h4>
+<p>Enviar datos de almacenamiento falsos a la cachÃ© para mejorar el rendimiento, haciÃ©ndose pasar por autÃ©nticos.</p>
 </div>
 <div id="ip-spoofing" class="section level4">
 <h4>IP Spoofing</h4>
-<p>Suplantación de la dirección IP, con el fin de esconder la identidad original o hacerse pasar por otro.</p>
+<p>SuplantaciÃ³n de la direcciÃ³n IP, con el fin de esconder la identidad original o hacerse pasar por otro.</p>
 </div>
 </div>
 <div id="ftp-bounce" class="section level3">
 <h3>FTP Bounce</h3>
-<p>Conexión a servidores FTP y envío de archivos a otras máquinas mediante el comando PORT a través de <em>firewalls</em> que lo permiten. Es ya obsoleto.</p>
+<p>ConexiÃ³n a servidores FTP y envÃ­o de archivos a otras mÃ¡quinas mediante el comando PORT a travÃ©s de <em>firewalls</em> que lo permiten. Es ya obsoleto.</p>
 </div>
 <div id="tcp-session-hijacking" class="section level3">
 <h3>TCP Session Hijacking</h3>
-<p>Tomar la sesión TCP al principio de la misma y suplantar a uno de los que se estaban comunicando.</p>
+<p>Tomar la sesiÃ³n TCP al principio de la misma y suplantar a uno de los que se estaban comunicando.</p>
 </div>
 <div id="ataque-man-in-the_middle" class="section level3">
 <h3>Ataque Man-In-The_Middle</h3>
-<p>Intercepción de cierto modo de comunicación por una entidad que se coloca entre los dos interlocutores. Por ejemplo, una máquina que se encuentra entre nuestro navegador y el servidor del banco, tratando de obtener nuestros datos bancarios.</p>
+<p>IntercepciÃ³n de cierto modo de comunicaciÃ³n por una entidad que se coloca entre los dos interlocutores. Por ejemplo, una mÃ¡quina que se encuentra entre nuestro navegador y el servidor del banco, tratando de obtener nuestros datos bancarios.</p>
 </div>
-<div id="ingenieria-social" class="section level3">
-<h3>Ingeniería social</h3>
-<p>Manipulación de las personas para que estas renuncien de manera voluntaria a la privacidad y la salvaguarda de sus datos.</p>
+<div id="ingenieraa-social" class="section level3">
+<h3>IngenierÃ­a social</h3>
+<p>ManipulaciÃ³n de las personas para que estas renuncien de manera voluntaria a la privacidad y la salvaguarda de sus datos.</p>
 </div>
 <div id="os-finger-printing" class="section level3">
 <h3>OS Finger Printing</h3>
-<p>Identificar el sistema operativo de un equipo con la intención de saber qué tipo de ataque lanzar.</p>
+<p>Identificar el sistema operativo de un equipo con la intenciÃ³n de saber quÃ© tipo de ataque lanzar.</p>
 <div id="activa" class="section level4">
 <h4>Activa</h4>
-<p>Enviar paquetes diseñados especialmente para analizar el tipo de respuesta del equipo y determinar el SO.</p>
+<p>Enviar paquetes diseÃ±ados especialmente para analizar el tipo de respuesta del equipo y determinar el SO.</p>
 </div>
 <div id="pasiva" class="section level4">
 <h4>Pasiva</h4>
-<p>Rastrear el comportamiento de una máquina para detectar sus sistema operativo.</p>
+<p>Rastrear el comportamiento de una mÃ¡quina para detectar sus sistema operativo.</p>
 </div>
 </div>
 <div id="keyloggers" class="section level3">
 <h3>KeyLoggers</h3>
-<p>Por lo general es software que registra las teclas presionadas en una máquina sin notificar al usuario, ya que se ejecuta en segundo plano.</p>
+<p>Por lo general es software que registra las teclas presionadas en una mÃ¡quina sin notificar al usuario, ya que se ejecuta en segundo plano.</p>
 </div>
 <div id="icmp-tunneling" class="section level3">
 <h3>ICMP Tunneling</h3>
-<p>Entra como un mensaje IMCP a través del firewall, que por defecto no lo bloquea y establece un canal de comunicación cifrado y oculto entre dos computadoras utilizando <em>pings</em>.</p>
+<p>Entra como un mensaje IMCP a travÃ©s del firewall, que por defecto no lo bloquea y establece un canal de comunicaciÃ³n cifrado y oculto entre dos computadoras utilizando <em>pings</em>.</p>
 </div>
 <div id="loki" class="section level3">
 <h3>LOKI</h3>
-<p>Es un programa utilizado para demostrar que los datos pueden transmitirse de manera secreta si se esconden en el tráfico de cargas no útiles, como por ejemplo, un ping. Se utiliza como puerta trasera en sistemas UNIX.</p>
+<p>Es un programa utilizado para demostrar que los datos pueden transmitirse de manera secreta si se esconden en el trÃ¡fico de cargas no Ãºtiles, como por ejemplo, un ping. Se utiliza como puerta trasera en sistemas UNIX.</p>
 </div>
-<div id="ataque-de-prediccion-de-secuencia-tcp" class="section level3">
-<h3>Ataque de predicción de secuencia TCP</h3>
-<p>El atacante espera y monitoriza la comunicación entre dos máquinas, con la intención de predecir el número de secuencia que sigue. Corta la comunicación entre ellas colapsando a una y suplantándola con su misma IP y enviando el número que debería seguir. Así la segunda máquina no se da cuenta de la usurpación y queda proclive a la inyección de datos maliciosos o a otorgar acceso al atacante.</p>
+<div id="ataque-de-prediccian-de-secuencia-tcp" class="section level3">
+<h3>Ataque de predicciÃ³n de secuencia TCP</h3>
+<p>El atacante espera y monitoriza la comunicaciÃ³n entre dos mÃ¡quinas, con la intenciÃ³n de predecir el nÃºmero de secuencia que sigue. Corta la comunicaciÃ³n entre ellas colapsando a una y suplantÃ¡ndola con su misma IP y enviando el nÃºmero que deberÃ­a seguir. AsÃ­ la segunda mÃ¡quina no se da cuenta de la usurpaciÃ³n y queda proclive a la inyecciÃ³n de datos maliciosos o a otorgar acceso al atacante.</p>
 </div>
 <div id="ataques-a-aplicaciones-web" class="section level3">
 <h3>Ataques a aplicaciones web</h3>
-<p>En la actualidad, la mayoría de la información se encuentra almacenada en páginas web. Contra ellas se lanzan los siguientes ataques:</p>
-<div id="inyeccion-sql" class="section level4">
-<h4>Inyección SQL</h4>
+<p>En la actualidad, la mayorÃ­a de la informaciÃ³n se encuentra almacenada en pÃ¡ginas web. Contra ellas se lanzan los siguientes ataques:</p>
+<div id="inyeccian-sql" class="section level4">
+<h4>InyecciÃ³n SQL</h4>
 <p>Ataque mediante el aprovechamiento de las vulnerabilidades de la capa de la base de datos.</p>
 </div>
 <div id="cross-site-request" class="section level4">
 <h4>Cross-Site Request</h4>
-<p>Transmisión de comandos o datos no autorizados por parte de un usuario en el que el sitio confía. Dicha confianza se entiende por el navegador que utiliza el usuario.</p>
+<p>TransmisiÃ³n de comandos o datos no autorizados por parte de un usuario en el que el sitio confÃ­a. Dicha confianza se entiende por el navegador que utiliza el usuario.</p>
 </div>
 <div id="envenenamiento-de-cookies" class="section level4">
 <h4>Envenenamiento de <em>cookies</em></h4>
-<p>Modificación de los contenidos de una cookie para robar la identidad de un usuario.</p>
+<p>ModificaciÃ³n de los contenidos de una cookie para robar la identidad de un usuario.</p>
 </div>
 <div id="robo-de-cookies" class="section level4">
 <h4>Robo de cookies</h4>
-<p>Se realiza por medio de Javascript (script del lado del cliente), consiguiendo que al hacer clic en un enlace, el script busque las cookies asociadas al sitio y las envíe al atacante por medio de correo, por ejemplo.</p>
+<p>Se realiza por medio de Javascript (script del lado del cliente), consiguiendo que al hacer clic en un enlace, el script busque las cookies asociadas al sitio y las envÃ­e al atacante por medio de correo, por ejemplo.</p>
 </div>
 <div id="web-defacement" class="section level4">
 <h4>Web Defacement</h4>
-<p>Modificación del contenido de un sitio web o su total sustitución por otro.</p>
+<p>ModificaciÃ³n del contenido de un sitio web o su total sustituciÃ³n por otro.</p>
 </div>
 <div id="buffer-overflow" class="section level4">
 <h4>Buffer Overflow</h4>
-<p>Almacenamiento de datos en un búfer por fuera de memoria para desbordarlo. Los datos sobrepasan la capacidad y comienzan a ocupar espacios reservados para variables de proceso o datos de control del programa. Puede causar la falla catastrófica de la aplicación o una violación del sitio.</p>
+<p>Almacenamiento de datos en un bÃºfer por fuera de memoria para desbordarlo. Los datos sobrepasan la capacidad y comienzan a ocupar espacios reservados para variables de proceso o datos de control del programa. Puede causar la falla catastrÃ³fica de la aplicaciÃ³n o una violaciÃ³n del sitio.</p>
 </div>
-<div id="navegacion-forzada" class="section level4">
-<h4>Navegación forzada</h4>
-<p>Entrar de manera forzada a todos los recursos accesibles de un sitio aunque no sean visibles y no haya referencia a los mismos. Pueden ser logs, archivos de respaldo o de configuración que puedan contener datos como contraseñas, por ejemplo.</p>
+<div id="navegacian-forzada" class="section level4">
+<h4>NavegaciÃ³n forzada</h4>
+<p>Entrar de manera forzada a todos los recursos accesibles de un sitio aunque no sean visibles y no haya referencia a los mismos. Pueden ser logs, archivos de respaldo o de configuraciÃ³n que puedan contener datos como contraseÃ±as, por ejemplo.</p>
 </div>
-<div id="division-de-respuesta-http" class="section level4">
-<h4>División de respuesta HTTP</h4>
-<p>El atacante pasa datos maliciosos a la aplicación y esta los incluye en un encabezado HTTP, abriendo la puerta para suplantación o el Cross-Site Request.</p>
+<div id="divisian-de-respuesta-http" class="section level4">
+<h4>DivisiÃ³n de respuesta HTTP</h4>
+<p>El atacante pasa datos maliciosos a la aplicaciÃ³n y esta los incluye en un encabezado HTTP, abriendo la puerta para suplantaciÃ³n o el Cross-Site Request.</p>
 </div>
-<div id="defectos-de-inyeccion" class="section level4">
-<h4>Defectos de inyección</h4>
-<p>Se refieren a aplicaciones web que utilizan un intérprete de scripts (Perl o Python) o bases de datos como SQL, llamadas al sistema o el uso de programas externos a través del shell. Un atacante podría incluir código malicioso en algún script y ejecutarlo.</p>
+<div id="defectos-de-inyeccian" class="section level4">
+<h4>Defectos de inyecciÃ³n</h4>
+<p>Se refieren a aplicaciones web que utilizan un intÃ©rprete de scripts (Perl o Python) o bases de datos como SQL, llamadas al sistema o el uso de programas externos a travÃ©s del shell. Un atacante podrÃ­a incluir cÃ³digo malicioso en algÃºn script y ejecutarlo.</p>
 </div>
 </div>
 <div id="malware" class="section level3">
 <h3>Malware</h3>
-<p>Es una forma abreviada de <em>software malicioso</em> e incluye virus, gusanos, troyanos, rootkits, spyware, etc. Es código creado con la finalidad de dañar.</p>
+<p>Es una forma abreviada de <em>software malicioso</em> e incluye virus, gusanos, troyanos, rootkits, spyware, etc. Es cÃ³digo creado con la finalidad de daÃ±ar.</p>
 <div id="virus" class="section level4">
 <h4>Virus</h4>
-<p>Programa informático que tiene la capacidad de reproducirse para infectar cualquier computadora después de propagarse por medio de internet, una red, memorias SD o USB. Debe unirse a otro programa informático y corrompen o dañan archivos.</p>
+<p>Programa informÃ¡tico que tiene la capacidad de reproducirse para infectar cualquier computadora despuÃ©s de propagarse por medio de internet, una red, memorias SD o USB. Debe unirse a otro programa informÃ¡tico y corrompen o daÃ±an archivos.</p>
 </div>
 <div id="gusanos" class="section level4">
 <h4>Gusanos</h4>
-<p>También pueden replicarse aunque lo hacen principalmente por medio de la red. No necesitan unirse a otro programa y sus daños van más bien por el lado de consumir ancho de banda.</p>
+<p>TambiÃ©n pueden replicarse aunque lo hacen principalmente por medio de la red. No necesitan unirse a otro programa y sus daÃ±os van mÃ¡s bien por el lado de consumir ancho de banda.</p>
 </div>
 <div id="rootkit" class="section level4">
 <h4>RootKit</h4>
-<p>Software diseñado para tomar los privilegios de administrador sobre un sistema sin ser detectado. El propósito es realizar operaciones maliciosas y se instalan incluso en la bios, hipervisores, cargadores de arranque o el kernel.</p>
+<p>Software diseÃ±ado para tomar los privilegios de administrador sobre un sistema sin ser detectado. El propÃ³sito es realizar operaciones maliciosas y se instalan incluso en la bios, hipervisores, cargadores de arranque o el kernel.</p>
 </div>
 <div id="troyanos" class="section level4">
 <h4>Troyanos</h4>
-<p>No se reproduce, pero se instala usualmente bajo permiso del usuario al hacerse pasar por software inocuo o benéfico. Permite el acceso al equipo.</p>
+<p>No se reproduce, pero se instala usualmente bajo permiso del usuario al hacerse pasar por software inocuo o benÃ©fico. Permite el acceso al equipo.</p>
 </div>
 </div>
 <div id="adware" class="section level3">
@@ -577,25 +589,25 @@ $(document).ready(function () {
 </div>
 <div id="spyware" class="section level3">
 <h3>Spyware</h3>
-<p>Espía las acciones de un usuario en su computadora, encendiendo la cámara web o recolectando las teclas que presiona, los archivos que crea o los sitios que visita.</p>
+<p>EspÃ­a las acciones de un usuario en su computadora, encendiendo la cÃ¡mara web o recolectando las teclas que presiona, los archivos que crea o los sitios que visita.</p>
 </div>
 <div id="phishing" class="section level3">
 <h3>Phishing</h3>
-<p>Extraer datos sensibles o comprometedores del usuario haciéndose pasar por una entidad de confianza.</p>
+<p>Extraer datos sensibles o comprometedores del usuario haciÃ©ndose pasar por una entidad de confianza.</p>
 </div>
 <div id="medidas-de-seguridad" class="section level3">
 <h3>Medidas de seguridad</h3>
 <ul>
-<li>Aplicación de filtrado de router</li>
+<li>AplicaciÃ³n de filtrado de router</li>
 <li>Bloquear direcciones IP sin usar</li>
-<li>Permitir el acceso a la red solo al tráfico deseado</li>
+<li>Permitir el acceso a la red solo al trÃ¡fico deseado</li>
 <li>Deshabilitar servicios de red innecesarios</li>
-<li>Actualización de antivirus regularmente</li>
-<li>Tener una muy buena política de contraseñas</li>
+<li>ActualizaciÃ³n de antivirus regularmente</li>
+<li>Tener una muy buena polÃ­tica de contraseÃ±as</li>
 <li>Limitar la cantidad de ancho de banda de la red</li>
 <li>Uso de la red de filtrado de acceso</li>
-<li>No abrir ningún correo sin remitente o que este sea desconocido. Incluso no abrir ninguno del cual se desconozca su intención o motivo o sea inesperado, aún conociendo al remitente.</li>
-<li>Implementar certificados de autenticación.</li>
+<li>No abrir ningÃºn correo sin remitente o que este sea desconocido. Incluso no abrir ninguno del cual se desconozca su intenciÃ³n o motivo o sea inesperado, aÃºn conociendo al remitente.</li>
+<li>Implementar certificados de autenticaciÃ³n.</li>
 <li>Bloquear cualquier puerto innecesario.</li>
 </ul>
 </div>
@@ -621,23 +633,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
