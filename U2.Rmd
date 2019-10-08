@@ -46,6 +46,14 @@ Daremos clic a `Documento en blanco` y nos aparecerá la siguiente pantalla.
 
 ### Writer
 
+_Writer_ es el procesador de textos que viene incluido con _LibreOffice_. Los archivos que genera son del tipo abierto `*.odt`, _open document_ y se ha vuelto un estándar mundial en cuanto a documentos, aunque no de facto. Al ejecutar la aplicación aparece la siguiente pantalla, aunque puede ser personalizada con más o menos barras de herramientas. 
+
+![](images/003-writer.png)
+
+Al lado derecho puede verse una especie de menú basado en iconos. Al abrirse dando clic en cualquiera de estos aparece una barra de herramientas, llamada barra lateral en este caso. Dicha barra puede ser algo redundante con respecto a la barra principal, por lo que podemos cambiar algo de la interfaz de usuario para ganar mayor espacio de edición. Vamos al menú `Ver -> Interfaz de usuario -> Barra única` y obtenemos la siguiente interfaz:
+
+![](images/004-writer.png)
+
 ### Markdown
 
 #### Typora
