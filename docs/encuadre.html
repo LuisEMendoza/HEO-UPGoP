@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -83,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,18 +244,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -323,8 +311,8 @@ $(document).ready(function () {
 
 
 <div id="asignatura-de-herramientas-ofimaticas" class="section level2">
-<h2>Asignatura de Herramientas OfimÃ¡ticas</h2>
-<p><strong>PropÃ³sito de aprendizaje de la asignatura</strong>: El alumno generarÃ¡ soluciones a necesidades informÃ¡ticas mediante herramientas ofimÃ¡ticas e Internet, para el tratamiento de la informaciÃ³n.</p>
+<h2>Asignatura de Herramientas Ofimáticas</h2>
+<p><strong>Propósito de aprendizaje de la asignatura</strong>: El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información.</p>
 </div>
 <div id="unidades-de-aprendizaje" class="section level2">
 <h2>Unidades de aprendizaje</h2>
@@ -333,23 +321,23 @@ $(document).ready(function () {
 </ol>
 <ul>
 <li>Manejo de archivos.</li>
-<li>Fundamentos de amenazas y ataques informÃ¡ticos</li>
+<li>Fundamentos de amenazas y ataques informáticos</li>
 <li>Aplicaciones del sistema operativo</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li><strong>OfimÃ¡tica</strong>.</li>
+<li><strong>Ofimática</strong>.</li>
 </ol>
 <ul>
 <li>Procesadores de texto</li>
 <li>Presentador de diapositivas</li>
-<li>Hojas de cÃ¡lculo</li>
+<li>Hojas de cálculo</li>
 </ul>
 <ol start="3" style="list-style-type: decimal">
 <li><strong>Internet</strong>.</li>
 </ol>
 <ul>
 <li>Navegadores e internet</li>
-<li>Fuentes de informaciÃ³n digital</li>
+<li>Fuentes de información digital</li>
 </ul>
 </div>
 
@@ -370,6 +358,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

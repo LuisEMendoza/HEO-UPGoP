@@ -33,7 +33,8 @@ Al abrirse, lo primero que saldrá será la siguiente pantalla:
 
 ![](images/002-iniciow.jpg)
 
-Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es (1) la barra azul de la izquierda. Ahí se encuentran las posibles acciones y opciones del programa, como `Inicio` (la pantalla actual), `Nuevo` (ofrece una buena cantidad de plantillas o documentos predefinidos) y `Abrir` (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de _OneDrive_ que hayamos registrado). En su parte inferior nos permite acceder a información de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicación a _Microsoft_ y opciones de la misma. Volveremos aquí más adelante. 
+Esta es la pantalla de inicio y cuenta con cuatro secciones bien diferenciadas. La primera que salta a la vista es 1) la barra azul de la izquierda. Ahí se encuentran las posibles acciones y opciones del programa, como `Inicio` (la pantalla actual), `Nuevo` (ofrece una buena cantidad de plantillas o documentos predefinidos) y `Abrir` (donde se muestran los documentos recientes, compartidos o presentes en alguna de las cuentas personales o de _OneDrive_ que hayamos registrado). En su parte inferior nos permite acceder a información de la cuenta (como el usuario o la licencia), el poder enviar comentarios sobre la aplicación a _Microsoft_ y opciones de la misma. Volveremos aquí más adelante. 
+
 
 En la parte superior derecha, justo al lado de los botones de minimizar/maximizar, se encuentra el estado de la cuenta que se encuentra abierta (2), además de dos botones con forma de _emoji_ que sirven como atajo para los comentarios positivos y negativos de la sección pasada.
 
